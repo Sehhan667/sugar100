@@ -77,3 +77,4 @@ effect give @e[tag=blueflag,type=zombie] invisibility infinite 255 true
 effect give @e[tag=blueflag,type=zombie] fire_resistance infinite 255 true
 execute as @e[tag=redflag,type=zombie] run data remove entity @s CustomName
 execute as @e[tag=blueflag,type=zombie] run data remove entity @s CustomName
+execute as @e[type=zombie] at @s run teleport @s ~ ~ ~ 1 1
