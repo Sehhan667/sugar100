@@ -1,5 +1,5 @@
 #通用计分板：只要任意游戏进行中就为1（每tick根据各玩法标志动态计算）
-scoreboard players set *anygame anygame 0
+
 execute if score *InGame InGame matches 1 run scoreboard players set *anygame anygame 1
 execute if score *InMLGGame InMLGGame matches 1 run scoreboard players set *anygame anygame 1
 execute if score *InFlagGame InFlagGame matches 1 run scoreboard players set *anygame anygame 1

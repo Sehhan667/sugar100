@@ -1,6 +1,8 @@
-execute unless score *anygame anygame matches 1 run return fail
-
-
+#execute unless score *anygame anygame matches 1 run return fail
+#execute unless score *anygame anygame matches 1 run execute as @a at @s run attribute @s movement_speed base reset
+#execute unless score *anygame anygame matches 1 run execute as @a at @s run attribute @s jump_strength base reset
+#execute if score *蓝队 score matches 5 run return fail
+#execute if score *红色 score matches 5 run return fail
 
 
 

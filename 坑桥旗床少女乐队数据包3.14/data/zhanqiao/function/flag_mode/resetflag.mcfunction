@@ -25,8 +25,8 @@ execute if score *map map matches 0 run summon zombie 439 136 446 {Tags:["bluefl
 
 
 
-team join red @e[tag=redflag]
-team join blue @e[tag=blueflag]
+#team join red @e[tag=redflag]
+#team join blue @e[tag=blueflag]
 item replace entity @e[type=zombie,tag=redflag] weapon.mainhand with air
 item replace entity @e[type=zombie,tag=blueflag] weapon.mainhand with air
 item replace entity @e[type=zombie,tag=redflag] armor.head with air

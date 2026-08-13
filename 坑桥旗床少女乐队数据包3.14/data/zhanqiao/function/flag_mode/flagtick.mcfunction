@@ -77,4 +77,7 @@ effect give @e[tag=blueflag,type=zombie] invisibility infinite 255 true
 effect give @e[tag=blueflag,type=zombie] fire_resistance infinite 255 true
 execute as @e[tag=redflag,type=zombie] run data remove entity @s CustomName
 execute as @e[tag=blueflag,type=zombie] run data remove entity @s CustomName
+#清除火焰状态，防止隐形僵尸残留燃烧特效（火抗只免伤不免视觉）
+execute as @e[type=zombie,tag=redflag] run data merge entity @s {Fire:-20}
+execute as @e[type=zombie,tag=blueflag] run data merge entity @s {Fire:-20}
 execute as @e[type=zombie] at @s run teleport @s ~ ~ ~ 1 1

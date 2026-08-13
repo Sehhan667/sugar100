@@ -4,6 +4,10 @@ kill @e[tag=c4_display]
 kill @e[tag=redflag_display]
 kill @e[tag=blueflag_display]
 effect clear @a
+
+scoreboard players set *anygame anygame 0
+
+
 #gamemode spectator @a[!team=blue,!team=red]
 #setblock 40 70 11 redstone_block
 #effect give @a slowness 3 255 true
