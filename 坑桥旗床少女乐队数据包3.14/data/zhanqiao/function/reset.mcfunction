@@ -34,6 +34,7 @@ execute if score *InBedGame InBedGame matches 1 run tp @a[team=red] 35 105 -24 f
 execute unless score *InGame InGame matches 1 unless score *InMLGGame InMLGGame matches 1 unless score *InBedGame InBedGame matches 1 if score *map map matches 0 run function zhanqiao:map/go/gostandoff
 execute unless score *InGame InGame matches 1 unless score *InMLGGame InMLGGame matches 1 unless score *InBedGame InBedGame matches 1 if score *map map matches 1 run function zhanqiao:map/go/gonuketown
 execute unless score *InGame InGame matches 1 unless score *InMLGGame InMLGGame matches 1 unless score *InBedGame InBedGame matches 1 if score *map map matches 5 run function zhanqiao:map/go/gosummit
+execute unless score *InGame InGame matches 1 unless score *InMLGGame InMLGGame matches 1 unless score *InBedGame InBedGame matches 1 if score *map map matches 3 run function zhanqiao:map/go/goraid
 
 
 execute if score *InHotSpotGame InHotSpotGame matches 1 run title @a subtitle {"text":"保证只有我方成员待在热点内以持续获得分数，150分获胜！","color":"yellow"}

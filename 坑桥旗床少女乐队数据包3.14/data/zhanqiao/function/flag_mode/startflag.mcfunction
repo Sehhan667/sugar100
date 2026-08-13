@@ -19,6 +19,9 @@ execute if score *map map matches 4 run scoreboard players set *map map -1
 
 execute if score *map map matches 6 run tellraw @a "当前选择的地图不支持该模式，已自动更改！"
 execute if score *map map matches 6 run scoreboard players set *map map -1
+
+execute if score *map map matches 3 run tellraw @a "当前选择的地图不支持该模式，已自动更改！"
+execute if score *map map matches 3 run scoreboard players set *map map -1
 function zhanqiao:csgo_mode/preload
 
 clear @a[team=blue]
