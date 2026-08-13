@@ -62,3 +62,21 @@ execute as @e[tag=redflag,x=40.5,y=99,z=-33.5,dx=0,dy=2,dz=0] run execute as @a[
 #旗帜归还判断
 execute as @a[team=blue,tag=carrying_blue_flag,x=26.5,y=99,z=56.5,dx=0,dy=2,dz=0] run function zhanqiao:flag_mode/drop_blue_flag
 execute as @a[team=red,tag=carrying_red_flag,x=40.5,y=99,z=-33.5,dx=0,dy=2,dz=0] run function zhanqiao:flag_mode/drop_red_flag
+
+
+#旗帜僵尸：完全隐形（卸掉装备和名字），用旗帜方块展示实体作为视觉替代（同c4方案）
+item replace entity @e[tag=redflag,type=zombie] weapon.mainhand with air
+item replace entity @e[tag=blueflag,type=zombie] weapon.mainhand with air
+item replace entity @e[tag=redflag,type=zombie] armor.head with air
+item replace entity @e[tag=blueflag,type=zombie] armor.head with air
+effect give @e[tag=redflag,type=zombie] resistance infinite 255 true
+effect give @e[tag=redflag,type=zombie] invisibility infinite 255 true
+effect give @e[tag=redflag,type=zombie] fire_resistance infinite 255 true
+effect give @e[tag=blueflag,type=zombie] resistance infinite 255 true
+effect give @e[tag=blueflag,type=zombie] invisibility infinite 255 true
+effect give @e[tag=blueflag,type=zombie] fire_resistance infinite 255 true
+execute as @e[tag=redflag,type=zombie] run data remove entity @s CustomName
+execute as @e[tag=blueflag,type=zombie] run data remove entity @s CustomName
+#为没有展示实体的旗帜僵尸生成旋转+发光的旗帜展示实体
+execute as @e[type=zombie,tag=redflag] unless data entity @s Passengers[0] run function zhanqiao:flag_mode/red_flag_display
+execute as @e[type=zombie,tag=blueflag] unless data entity @s Passengers[0] run function zhanqiao:flag_mode/blue_flag_display

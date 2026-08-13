@@ -1,6 +1,8 @@
 execute if score *InGame InGame matches 1 run clear @a #zhanqiao:clear
 kill @e[type=zombie]
 kill @e[tag=c4_display]
+kill @e[tag=redflag_display]
+kill @e[tag=blueflag_display]
 effect clear @a
 #gamemode spectator @a[!team=blue,!team=red]
 #setblock 40 70 11 redstone_block

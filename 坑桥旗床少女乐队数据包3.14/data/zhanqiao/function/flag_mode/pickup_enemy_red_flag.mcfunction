@@ -6,6 +6,7 @@ tag @s add carrying_red_flag
 
 # 移除地面旗帜核心和视觉实体
 kill @e[type=zombie,tag=redflag]
+kill @e[tag=redflag_display]
 
 # 给玩家头盔放上红色旗帜
 item replace entity @a[tag=carrying_red_flag] armor.head with minecraft:red_banner

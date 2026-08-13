@@ -6,6 +6,7 @@ tag @s add carrying_blue_flag
 
 # 移除地面旗帜核心和视觉实体
 kill @e[type=zombie,tag=blueflag]
+kill @e[tag=blueflag_display]
 
 # 给玩家头盔放上红色旗帜
 item replace entity @a[tag=carrying_blue_flag] armor.head with minecraft:blue_banner

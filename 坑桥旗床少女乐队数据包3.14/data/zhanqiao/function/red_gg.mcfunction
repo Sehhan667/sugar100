@@ -6,6 +6,8 @@ clear @a[team=red]
 function zhanqiao:resetgamescore
 kill @e[type=zombie]
 kill @e[tag=c4_display]
+kill @e[tag=redflag_display]
+kill @e[tag=blueflag_display]
 tp @a 14 104 14
 execute as @a at @a run spawnpoint @a 14 104 14
 gamemode adventure @a

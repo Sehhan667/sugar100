@@ -27,6 +27,8 @@ scoreboard players reset *c4team c4team
 kill @e[type=sheep]
 kill @e[type=zombie]
 kill @e[tag=c4_display]
+kill @e[tag=redflag_display]
+kill @e[tag=blueflag_display]
 scoreboard players set *c4time c4time -1
 bossbar set minecraft:hotspotblue visible false
 bossbar set minecraft:hotspotred visible false
