@@ -39,7 +39,8 @@ effect give @e[type=zombie,tag=blueflag] invisibility infinite 255 true
 effect give @e[type=zombie,tag=blueflag] fire_resistance infinite 255 true
 execute as @e[type=zombie,tag=redflag] run data remove entity @s CustomName
 execute as @e[type=zombie,tag=blueflag] run data remove entity @s CustomName
-execute as @e[type=zombie,tag=redflag] unless data entity @s Passengers[0] run function zhanqiao:flag_mode/red_flag_display
-execute as @e[type=zombie,tag=blueflag] unless data entity @s Passengers[0] run function zhanqiao:flag_mode/blue_flag_display
+#每回合开始直接运行一次展示实体生成（开头已清理旧展示实体，不会重复）
+execute as @e[type=zombie,tag=redflag] run function zhanqiao:flag_mode/red_flag_display
+execute as @e[type=zombie,tag=blueflag] run function zhanqiao:flag_mode/blue_flag_display
 execute if score *InFlagGame InFlagGame matches 1 run item replace entity @a armor.head with minecraft:air
 
