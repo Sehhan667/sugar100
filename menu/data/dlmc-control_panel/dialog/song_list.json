@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:multi_action",
+
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause" :false,
+  "columns": 3,
+
+  "title": [{"text":"歌曲列表","color":"#FFFFFF"}],
+  "external_title": [{"text":"测试版本","color":"#FFFFFF"}],
+
+  "actions": [{"label": "希望有羽毛和翅膀","action": {"type": "minecraft:run_command","command": "function music:main/play/hopeisthethingwithfeathers"}},
+              {"label": "Constant Moderato","action": {"type": "minecraft:run_command","command": "function music:main/play/constant_moderato"}},
+              {"label": "I can't wait","action": {"type": "minecraft:run_command","command": "function music:main/play/i_cant_wait"}},
+              {"label": "Monster","action": {"type": "minecraft:run_command","command": "function music:main/play/yoasobimonster"}},
+              {"label": "力气","action": {"type": "minecraft:run_command","command": "function music:main/play/tobu__higher"}},
+              {"label": "炉心融解","action": {"type": "minecraft:run_command","command": "function music:main/play/meltdown"}},
+              {"label": "地图主题曲","action": {"type": "minecraft:run_command","command": "function music:main/play/haruhikage"}},
+              {"label": "众神眷恋的幻想乡","action": {"type": "minecraft:run_command","command": "function music:main/play/gensokyo"}},
+              {"label": "Into the Night","action": {"type": "minecraft:run_command","command": "function music:main/play/_into_the_night"}},
+              {"label": "YMCA","action": {"type": "minecraft:run_command","command": "function music:main/play/ymca"}}
+  ]}

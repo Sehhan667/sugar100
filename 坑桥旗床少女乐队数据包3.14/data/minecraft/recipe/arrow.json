@@ -1,0 +1,11 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "iron_ingot",
+        "stick"
+    ],
+    "result": {
+        "id": "arrow",
+        "count": 12
+    }
+}

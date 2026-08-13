@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "iron_ingot",
+        "iron_ingot",
+        "stick",
+        "stick",
+        "stick"
+    ],
+    "result": {
+        "id": "bow",
+        "count": 1
+    }
+}

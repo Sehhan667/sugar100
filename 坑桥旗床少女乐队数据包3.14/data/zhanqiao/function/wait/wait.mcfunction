@@ -1,0 +1,9 @@
+execute as @a[team=red] at @s run attribute @s movement_speed base set 0
+execute as @a[team=red] at @s run attribute @s minecraft:jump_strength base set 0
+execute as @a[team=blue] at @s run attribute @s movement_speed base set 0
+execute as @a[team=blue] at @s run attribute @s minecraft:jump_strength base set 0
+schedule function zhanqiao:wait/2s 2s replace
+schedule function zhanqiao:wait/3s 3s replace
+schedule function zhanqiao:wait/4s 4s replace
+schedule function zhanqiao:wait/5s 5s replace
+effect give @a resistance 4 255 true

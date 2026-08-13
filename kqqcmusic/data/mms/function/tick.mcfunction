@@ -1,0 +1,10 @@
+execute if score *music music matches 1 run function mms:infinity_heaven
+execute if score *music music matches 2 run function mms:genshin_1
+execute if score *music music matches 3 run function mms:mochoutown
+execute if score *music music matches 4 run function mms:lonelysong
+execute if score *music music matches 5 run function mms:water
+execute if score *music music matches 6 run function mms:snow
+execute if score *music music matches 7 run function mms:heroism
+execute if score *music music matches 8 run function mms:callofsilence
+execute if score *music music matches 9 run function mms:deco_1
+execute if score *music music matches 10 run function mms:emotionrecyclebin

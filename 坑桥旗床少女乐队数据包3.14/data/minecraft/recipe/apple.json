@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+    ],
+    "result": {
+        "id": "golden_apple",
+        "count": 3
+    }
+}

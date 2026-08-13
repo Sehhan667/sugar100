@@ -1,0 +1,19 @@
+{
+    "pack":{
+        "description" : "大佬萌茶的快捷控制面板二改",
+        "min_format" : [94,1],
+        "max_format" : [94,1]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "1_21_6-1_21_10",
+                "formats": [80,88],
+                "pack_format": 80,
+                "supported_formats": [80,88],
+                "min_format": [80,0],
+                "max_format": [88,0]
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "shot_arrow": {
+            "trigger": "minecraft:shot_crossbow",
+            "conditions": {
+                "item": {
+                    "items": ["minecraft:crossbow"]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "zhanqiao:shot_mode/ammo_control"
+    }
+}

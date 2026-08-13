@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "reloaded": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": ["minecraft:crossbow"],
+                    "predicates": {
+                        "charged_projectiles": {}
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "zhanqiao:shot_mode/refill_mag"
+    }
+}

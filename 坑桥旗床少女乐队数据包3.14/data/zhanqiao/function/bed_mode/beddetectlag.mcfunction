@@ -1,0 +1,1 @@
+schedule function zhanqiao:mlg_mode/beddetect 0.5s replace

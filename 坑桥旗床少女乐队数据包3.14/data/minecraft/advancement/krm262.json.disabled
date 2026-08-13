@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "shot_arrow": {
+            "trigger": "minecraft:shot_crossbow",
+            "conditions": {
+                "item": {
+                    "items": ["minecraft:crossbow"],
+                    "components": {
+                        "custom_name": "KRM262"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "zhanqiao:shot_mode/krm262"
+    }
+}

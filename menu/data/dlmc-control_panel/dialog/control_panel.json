@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:multi_action",
+
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause" :false,
+  "columns": 3,
+
+  "title": [{"text":"坑桥旗床控制面板","color":"#FFFFFF"}],
+  "external_title": [{"text":"测试版本","color":"#FFFFFF"}],
+
+  "actions": [{"label": "切换歌曲","action": {"type": "minecraft:run_command","command": "function music:main/play/control/random"}},
+              {"label": "下一首","action": {"type": "minecraft:run_command","command": "function music:main/play/control/next"}},
+              {"label": "停止播放","action": {"type": "minecraft:run_command","command": "function music:main/play/control/stop"}},
+              {"label": "歌曲列表","action": {"type": "minecraft:show_dialog","dialog": "dlmc-control_panel:song_list"}},
+              {"label": "重置地图","action": {"type": "minecraft:run_command","command": "function zhanqiao:gunmu_gg"}},
+              {"label": "红队强制得分","action": {"type": "minecraft:run_command","command": "function zhanqiao:redwin"}},
+              {"label": "蓝队强制得分","action": {"type": "minecraft:run_command","command": "function zhanqiao:bluewin"}}
+  ]}

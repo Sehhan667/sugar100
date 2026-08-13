@@ -1,0 +1,46 @@
+{
+    "values": [
+        "minecraft:player",
+
+        "minecraft:allay",
+        "minecraft:armadillo",
+        "minecraft:bat",
+        "minecraft:camel",
+        "minecraft:chicken",
+        "minecraft:cow",
+        "minecraft:donkey",
+        "minecraft:happy_ghast",
+        "minecraft:horse",
+        "minecraft:mooshroom",
+        "minecraft:mule",
+        "minecraft:parrot",
+        "minecraft:pig",
+        "minecraft:rabbit",
+        "minecraft:sheep",
+        "minecraft:skeleton_horse",
+        "minecraft:sniffer",
+        "minecraft:strider",
+        "minecraft:wandering_trader",
+        "minecraft:goat",
+        "minecraft:glow_squid",
+        "minecraft:villager",
+        "minecraft:cat",
+        "minecraft:frog",
+        "minecraft:ocelot",
+        "minecraft:snow_golem",
+        "minecraft:bee",
+        "minecraft:fox",
+        "minecraft:iron_golem",
+        "minecraft:llama",
+        "minecraft:trader_llama",
+        "minecraft:panda",
+        "minecraft:polar_bear",
+        "minecraft:wolf",
+
+        "#dlmc-control_panel:monster",
+        {
+            "id": "minecraft:copper_golem",
+            "required": false
+        }
+    ]
+}

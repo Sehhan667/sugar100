@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "shot_arrow": {
+            "trigger": "minecraft:bee_nest_destroyed",
+            "conditions": {
+                "block":"beehive"
+            }
+        }
+    },
+    "rewards": {
+        "function": "zhanqiao:battlebox/getxp"
+    }
+}

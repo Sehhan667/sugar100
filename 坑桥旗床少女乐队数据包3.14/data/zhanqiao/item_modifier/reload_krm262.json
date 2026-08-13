@@ -1,0 +1,22 @@
+[
+    {
+        "function":"minecraft:set_components",
+        "components":{
+            "minecraft:charged_projectiles":[
+                {"id":"minecraft:end_rod",
+                "count":5,
+                "components": {"intangible_projectile": {}},
+                "id":"minecraft:end_rod",
+                "count":1,
+                "components": {"intangible_projectile": {}},
+                "id":"minecraft:end_rod",
+                "count":1,
+                "components": {"intangible_projectile": {}}
+                
+                
+                
+                }
+            ]
+        }
+    }
+]
