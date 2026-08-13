@@ -1,6 +1,6 @@
 #schedule function zhanqiao:tips 2s replace
 #这一条是随机一个0-20的数字，有几条tips就写0-几
-execute store result score *tips tips run random value 0..186
+execute store result score *tips tips run random value 0..193
 execute if score *tips tips matches 0 run tellraw @a {text:"Tips:来唱歌！咕！咕咕！",color:"yellow"}
 execute if score *tips tips matches 1 run tellraw @a {text:"Tips:据野史记载，高冷小闪是绝佳的洗澡伴侣。",color:"yellow"}
 execute if score *tips tips matches 2 run tellraw @a {text:"Tips:不要忘记了，你可以提前把枪支放在副手换弹喔！",color:"yellow"}
@@ -190,3 +190,7 @@ execute if score *tips tips matches 186 run tellraw @a {text:"Tips:niko空三我
 execute if score *tips tips matches 187 run tellraw @a {text:"Tips:小黑：叫唤",color:"yellow"}
 execute if score *tips tips matches 188 run tellraw @a {text:"Tips:我只是不想第一个似我想有什么错！！！！",color:"yellow"}
 execute if score *tips tips matches 189 run tellraw @a {text:"Tips:在你们玩耍的时候，不要忘记有一个小水果正在痛苦的坐牢（",color:"yellow"}
+execute if score *tips tips matches 190 run tellraw @a {text:"Tips:为什么我的麦克风会惨叫...等等，它刚刚说了什么？",color:"yellow"}
+execute if score *tips tips matches 191 run tellraw @a {text:"Tips:中国人会飞，那不是开挂了吗",color:"yellow"}
+execute if score *tips tips matches 192 run tellraw @a {text:"Tips:严肃支持删除重锤",color:"yellow"}
+execute if score *tips tips matches 193 run tellraw @a {text:"Tips:严肃命令在场所有人都去下载主播的动作优化包",color:"yellow"}
