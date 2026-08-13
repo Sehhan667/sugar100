@@ -1,3 +1,16 @@
+#通用计分板：只要任意游戏进行中就为1（每tick根据各玩法标志动态计算）
+scoreboard players set *anygame anygame 0
+execute if score *InGame InGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InMLGGame InMLGGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InFlagGame InFlagGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InShotGame InShotGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InShotGameWin InShotGameWin matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InCSGOGame InCSGOGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InHotSpotGame InHotSpotGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InBoxGame InBoxGame matches 1 run scoreboard players set *anygame anygame 1
+execute if score *InBedGame InBedGame matches 1 run scoreboard players set *anygame anygame 1
+
+
 execute if score *InGame InGame matches 1 run execute if score *蓝队 score matches 5.. run function zhanqiao:blue_gg
 execute if score *InGame InGame matches 1 run execute if score *红色 score matches 5.. run function zhanqiao:red_gg
 

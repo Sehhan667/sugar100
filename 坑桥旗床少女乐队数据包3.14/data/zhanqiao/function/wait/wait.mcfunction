@@ -1,3 +1,9 @@
+execute unless score *anygame anygame matches 1 run return fail
+
+
+
+
+
 execute as @a[team=red] at @s run attribute @s movement_speed base set 0
 execute as @a[team=red] at @s run attribute @s minecraft:jump_strength base set 0
 execute as @a[team=blue] at @s run attribute @s movement_speed base set 0

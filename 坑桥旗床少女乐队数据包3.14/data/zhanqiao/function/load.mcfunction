@@ -51,6 +51,8 @@ scoreboard objectives add InCSGOGame dummy
 scoreboard objectives add InHotSpotGame dummy
 scoreboard objectives add InBoxGame dummy
 scoreboard objectives add InBedGame dummy
+#通用计分板：任意游戏进行中=1
+scoreboard objectives add anygame dummy
 
 scoreboard objectives add death deathCount
 scoreboard objectives add killed playerKillCount
