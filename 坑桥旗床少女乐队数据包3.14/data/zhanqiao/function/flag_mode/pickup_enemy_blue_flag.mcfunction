@@ -1,5 +1,7 @@
 #debug
 execute if score *debug debug matches 1 run tellraw @a "pickup_enemy_blue_flag.mcfunction executed"
+# 如果自己已经持有旗帜则不能拾取
+
 # 标记玩家持旗及旗帜颜色
 #tag @s add carrying_flag
 tag @s add carrying_blue_flag
