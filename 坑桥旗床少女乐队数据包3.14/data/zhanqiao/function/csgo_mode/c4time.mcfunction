@@ -1,0 +1,1 @@
+scoreboard players set *c4time c4time 10240
