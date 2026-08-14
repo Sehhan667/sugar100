@@ -37,9 +37,9 @@ scoreboard players set *蓝队 score 0
 #execute unless score *allowchangeweapon allowchangeweapon matches 1 run execute as @a[team=red] at @s run spawnpoint @s -202 109 -119
 #gamemode survival @a
 bossbar add time "爆炸时间"
-bossbar set minecraft:time max 10240
+execute store result bossbar minecraft:time max run scoreboard players get *maxc4time maxc4time
 bossbar add lefttime "剩余安置时间"
-bossbar set minecraft:lefttime max 20480
+execute store result bossbar minecraft:lefttime max run scoreboard players get *maxlefttime maxlefttime
 
 
 

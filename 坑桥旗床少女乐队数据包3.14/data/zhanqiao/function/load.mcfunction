@@ -126,3 +126,10 @@ scoreboard objectives add tips dummy
 scoreboard objectives add tipstime dummy
 #data modify block -19 109 11 front_text.messages[0] set value {"text":"1","click_event":{"action":"open_url","url":"www.baidu.com"}}
 scoreboard objectives add wool dummy
+
+
+#----------csgo倒计时----------#
+scoreboard objectives add maxc4time dummy
+scoreboard objectives add maxlefttime dummy
+scoreboard objectives add maxc4timeset dummy
+scoreboard objectives add maxlefttimeset dummy
