@@ -1,10 +1,10 @@
-execute as @a[team=red] if score *红色 score matches 1.. run give @s oak_log 16
-execute as @a[team=red] if score *红色 score matches 1.. run give @s stone_sword
-execute as @a[team=red] if score *红色 score matches 1.. run give @s stone_pickaxe
+execute as @a[team=red] if score *红队 score matches 1.. run give @s oak_log 16
+execute as @a[team=red] if score *红队 score matches 1.. run give @s stone_sword
+execute as @a[team=red] if score *红队 score matches 1.. run give @s stone_pickaxe
 execute as @a[team=blue] if score *蓝队 score matches 1.. run give @s oak_log 16
 execute as @a[team=blue] if score *蓝队 score matches 1.. run give @s stone_sword
 execute as @a[team=blue] if score *蓝队 score matches 1.. run give @s stone_pickaxe
 execute as @a[team=red] if score *蓝队 score matches 3.. run give @s iron_sword
-execute as @a[team=red] if score *红色 score matches 3.. run give @s iron_sword
+execute as @a[team=red] if score *红队 score matches 3.. run give @s iron_sword
 execute as @a[team=red] if score *蓝队 score matches 5.. run give @s diamond_sword
-execute as @a[team=red] if score *红色 score matches 5.. run give @s diamond_sword
+execute as @a[team=red] if score *红队 score matches 5.. run give @s diamond_sword

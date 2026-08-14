@@ -29,7 +29,7 @@ clear @a[team=blue]
 clear @a[team=red]
 #execute as @a[team=blue] run function zhanqiao:give/blue
 #execute as @a[team=red] run function zhanqiao:give/red
-scoreboard players set *红色 score 0
+scoreboard players set *红队 score 0
 scoreboard players set *蓝队 score 0
 
 #execute as @a at @s run spawnpoint @s 35 140 13

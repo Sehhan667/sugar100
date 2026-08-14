@@ -36,7 +36,7 @@ clear @a[team=red]
 #title @a subtitle {"text":"保证只有我方成员待在热点内以持续获得分数，150分获胜！","color":"yellow"}
 #title @a title {"text":"热点战开始！","color":"blue"}
 #tellraw @a "热点所在的地方会亮起信标，热点范围有海晶石灯标记  "
-scoreboard players set *红色 score 0
+scoreboard players set *红队 score 0
 scoreboard players set *蓝队 score 0
 
 #execute as @a[team=red] at @s run spawnpoint @s 341 137 363

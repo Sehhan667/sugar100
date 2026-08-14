@@ -30,7 +30,7 @@ clear @a[team=red]
 #execute as @a[team=red] run function zhanqiao:give/red
 
 #execute if score *InShotGame InShotGame matches 1 run tellraw @a "在弹夹打空时长按右键换弹，或者，你可以把武器放在副手长按右键换弹"
-scoreboard players set *红色 score 0
+scoreboard players set *红队 score 0
 scoreboard players set *蓝队 score 0
 
 #execute as @a at @s run spawnpoint @s 35 140 13

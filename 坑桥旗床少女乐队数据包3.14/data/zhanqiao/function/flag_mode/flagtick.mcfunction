@@ -1,5 +1,5 @@
 execute if score *蓝队 score matches 5.. run function zhanqiao:blue_gg
-execute if score *红色 score matches 5.. run function zhanqiao:red_gg
+execute if score *红队 score matches 5.. run function zhanqiao:red_gg
 #flag模式专用tick
 execute if score *map map matches -1 positioned 7 92 -48 as @a[dx=53,dy=-3,dz=118,gamemode=survival,tag=carrying_red_flag] run function zhanqiao:reset
 execute if score *map map matches -1 positioned 7 92 -48 as @a[dx=53,dy=-3,dz=118,gamemode=survival,tag=carrying_blue_flag] run function zhanqiao:reset

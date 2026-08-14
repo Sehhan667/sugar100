@@ -12,11 +12,11 @@ execute if score *InBedGame InBedGame matches 1 run scoreboard players set *anyg
 
 
 execute if score *InGame InGame matches 1 run execute if score *蓝队 score matches 5.. run function zhanqiao:blue_gg
-execute if score *InGame InGame matches 1 run execute if score *红色 score matches 5.. run function zhanqiao:red_gg
+execute if score *InGame InGame matches 1 run execute if score *红队 score matches 5.. run function zhanqiao:red_gg
 
 
 execute if score *InShotGameWin InShotGameWin matches 1 run execute if score *蓝队 score matches 30.. run function zhanqiao:blue_gg
-execute if score *InShotGameWin InShotGameWin matches 1 run execute if score *红色 score matches 30.. run function zhanqiao:red_gg
+execute if score *InShotGameWin InShotGameWin matches 1 run execute if score *红队 score matches 30.. run function zhanqiao:red_gg
 
 execute if score *InBoxGame InBoxGame matches 1 run function zhanqiao:battlebox/boxtick
 
@@ -69,7 +69,7 @@ execute unless score *InGame InGame matches 1 run schedule clear zhanqiao:25s
 execute as @a[scores={death=1..}] at @s unless score *InBoxGame InBoxGame matches 1 run function zhanqiao:death
 execute as @a[scores={death=1..}] at @s if score *InBoxGame InBoxGame matches 1 run function zhanqiao:battlebox/boxdeath
 execute if score *InShotGameWin InShotGameWin matches 1 run execute as @a[team=red,scores={death=1..}] at @s run scoreboard players add *蓝队 score 1
-execute if score *InShotGameWin InShotGameWin matches 1 run execute as @a[team=blue,scores={death=1..}] at @s run scoreboard players add *红色 score 1
+execute if score *InShotGameWin InShotGameWin matches 1 run execute as @a[team=blue,scores={death=1..}] at @s run scoreboard players add *红队 score 1
 #execute if score *InCSGOGame InCSGOGame matches 1 run clear @a[scores={death=1..}]
 execute as @a[scores={death=1..}] at @s run tag @s add death
 execute as @a[tag=death,nbt={Health:20f}] run effect give @s minecraft:resistance 3 255 true

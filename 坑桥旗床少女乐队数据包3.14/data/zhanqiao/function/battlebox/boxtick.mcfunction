@@ -1,7 +1,7 @@
 #execute if blocks 593 162 128 596 162 125 611 143 183 all run function zhanqiao:battlebox/blueboxed
 #execute if blocks 593 162 128 596 162 125 604 143 183 all run function zhanqiao:battlebox/redboxed
 execute if score *蓝队 score matches 10.. run function zhanqiao:blue_gg
-execute if score *红色 score matches 10.. run function zhanqiao:red_gg
+execute if score *红队 score matches 10.. run function zhanqiao:red_gg
 fill 547 185 174 642 185 79 air
 fill 551 146 170 551 147 170 air
 fill 638 143 83 638 144 83 air

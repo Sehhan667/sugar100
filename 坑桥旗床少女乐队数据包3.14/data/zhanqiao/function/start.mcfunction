@@ -8,7 +8,7 @@ clear @a[team=red]
 #execute as @a[team=blue] run function zhanqiao:give/blue
 #execute as @a[team=red] run function zhanqiao:give/red
 title @a title {"text":"游戏开始","color":"blue"}
-scoreboard players set *红色 score 0
+scoreboard players set *红队 score 0
 scoreboard players set *蓝队 score 0
 function zhanqiao:reset
 gamemode survival @a

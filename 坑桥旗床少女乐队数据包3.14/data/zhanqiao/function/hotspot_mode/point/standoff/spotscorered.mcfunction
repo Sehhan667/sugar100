@@ -3,8 +3,8 @@ execute if score *debug debug matches 1 run tellraw @a "red scored!"
 
 
 
-execute if score *hotspotposition hotspotposition matches 0 positioned 380 136 402 unless entity @a[team=blue,dx=15,dy=3,dz=7] run scoreboard players add *红色 score 1
-execute if score *hotspotposition hotspotposition matches 1 positioned 399 136 439 unless entity @a[team=blue,dx=5,dy=3,dz=15] run scoreboard players add *红色 score 1
-execute if score *hotspotposition hotspotposition matches 2 positioned 431 136 401 unless entity @a[team=blue,dx=10,dy=3,dz=14] run scoreboard players add *红色 score 1
-execute if score *hotspotposition hotspotposition matches 3 positioned 361 140 377 unless entity @a[team=blue,dx=5,dy=3,dz=6] run scoreboard players add *红色 score 1
+execute if score *hotspotposition hotspotposition matches 0 positioned 380 136 402 unless entity @a[team=blue,dx=15,dy=3,dz=7] run scoreboard players add *红队 score 1
+execute if score *hotspotposition hotspotposition matches 1 positioned 399 136 439 unless entity @a[team=blue,dx=5,dy=3,dz=15] run scoreboard players add *红队 score 1
+execute if score *hotspotposition hotspotposition matches 2 positioned 431 136 401 unless entity @a[team=blue,dx=10,dy=3,dz=14] run scoreboard players add *红队 score 1
+execute if score *hotspotposition hotspotposition matches 3 positioned 361 140 377 unless entity @a[team=blue,dx=5,dy=3,dz=6] run scoreboard players add *红队 score 1
 scoreboard players set *hotspotaddred hotspotaddred 0

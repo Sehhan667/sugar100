@@ -1,6 +1,6 @@
 title @a title {"text":"红队胜利","color": "red"}
 scoreboard players set *蓝队 score 0
-scoreboard players set *红色 score 0
+scoreboard players set *红队 score 0
 clear @a[team=blue]
 clear @a[team=red]
 function zhanqiao:resetgamescore

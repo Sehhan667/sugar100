@@ -1,5 +1,5 @@
 execute if score *InHotSpotGame InHotSpotGame matches 1 run execute if score *蓝队 score matches 150.. run function zhanqiao:blue_gg
-execute if score *InHotSpotGame InHotSpotGame matches 1 run execute if score *红色 score matches 150.. run function zhanqiao:red_gg
+execute if score *InHotSpotGame InHotSpotGame matches 1 run execute if score *红队 score matches 150.. run function zhanqiao:red_gg
 
 
 

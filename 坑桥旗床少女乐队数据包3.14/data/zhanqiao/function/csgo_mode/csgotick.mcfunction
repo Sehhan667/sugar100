@@ -1,5 +1,5 @@
 execute if score *蓝队 score matches 5.. run function zhanqiao:blue_gg
-execute if score *红色 score matches 5.. run function zhanqiao:red_gg
+execute if score *红队 score matches 5.. run function zhanqiao:red_gg
 execute if score *c4team c4team matches 1 run execute if score *c4time c4time matches 0 run function zhanqiao:redwin
 execute if score *c4team c4team matches 0 run execute if score *c4time c4time matches 0 run function zhanqiao:bluewin
 execute if score *c4team c4team matches 0 run execute if score *lefttime lefttime matches ..0 run function zhanqiao:redwin

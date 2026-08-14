@@ -41,7 +41,7 @@ team modify red friendlyFire false
 scoreboard objectives add blockCount dummy
 scoreboard objectives add golden_apple dummy
 team join blue *蓝队
-team join red *红色
+team join red *红队
 
 #创建游戏模式计分板
 scoreboard objectives add InGame dummy
