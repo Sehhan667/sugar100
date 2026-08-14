@@ -64,5 +64,5 @@ execute if score *map map matches 3 run setblock 691 140 345 air
 gamerule immediate_respawn false
 bossbar set minecraft:time visible false
 #scoreboard players set *lefttime lefttime 20480
-execute store result bossbar minecraft:lefttime max run scoreboard players get *maxlefttime maxlefttime
+execute store result score *lefttime lefttime run scoreboard players get *maxlefttime maxlefttime
 clear @a[tag=!carrying_c4] stick
