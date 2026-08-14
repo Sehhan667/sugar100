@@ -4,12 +4,13 @@
 #execute if score *蓝队 score matches 5 run return fail
 #execute if score *红队 score matches 5 run return fail
 
+execute if score *蓝队 score matches 5.. run return fail
+execute if score *红队 score matches 5.. run return fail
 
-
-execute as @a[team=red] at @s run attribute @s movement_speed base set 0
-execute as @a[team=red] at @s run attribute @s minecraft:jump_strength base set 0
-execute as @a[team=blue] at @s run attribute @s movement_speed base set 0
-execute as @a[team=blue] at @s run attribute @s minecraft:jump_strength base set 0
+execute as @a[team=red] run attribute @s movement_speed base set 0
+execute as @a[team=red] run attribute @s minecraft:jump_strength base set 0
+execute as @a[team=blue] run attribute @s movement_speed base set 0
+execute as @a[team=blue] run attribute @s minecraft:jump_strength base set 0
 schedule function zhanqiao:wait/2s 2s replace
 schedule function zhanqiao:wait/3s 3s replace
 schedule function zhanqiao:wait/4s 4s replace
