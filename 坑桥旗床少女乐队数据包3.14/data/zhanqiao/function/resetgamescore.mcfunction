@@ -34,6 +34,8 @@ bossbar set minecraft:hotspotblue visible false
 bossbar set minecraft:hotspotred visible false
 bossbar set lefttime visible false
 execute as @a at @s run attribute @s armor base set 0
+execute as @a at @s run attribute @s armor_toughness base set 0
+execute as @a at @s run attribute @s knockback_resistance base set 0
 xp set @a 0 levels
 xp set @a 0 points
 gamerule keep_inventory true
