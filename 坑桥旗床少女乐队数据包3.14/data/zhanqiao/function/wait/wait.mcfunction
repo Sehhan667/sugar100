@@ -4,8 +4,8 @@
 #execute if score *蓝队 score matches 5 run return fail
 #execute if score *红队 score matches 5 run return fail
 
-execute if score *蓝队 score matches 5.. run return fail
-execute if score *红队 score matches 5.. run return fail
+execute if score *蓝队 score matches 5.. run return 0
+execute if score *红队 score matches 5.. run return 0
 
 execute as @a[team=red] run attribute @s movement_speed base set 0
 execute as @a[team=red] run attribute @s minecraft:jump_strength base set 0
