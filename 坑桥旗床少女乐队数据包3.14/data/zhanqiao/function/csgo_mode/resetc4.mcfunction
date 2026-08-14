@@ -66,3 +66,4 @@ bossbar set minecraft:time visible false
 #scoreboard players set *lefttime lefttime 20480
 execute store result score *lefttime lefttime run scoreboard players get *maxlefttime maxlefttime
 clear @a[tag=!carrying_c4] stick
+#
