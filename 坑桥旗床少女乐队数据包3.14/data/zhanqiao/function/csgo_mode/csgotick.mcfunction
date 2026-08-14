@@ -69,8 +69,8 @@ execute store result bossbar minecraft:time value run scoreboard players get *c4
 execute as @a run execute if score *lefttime lefttime matches 1.. run bossbar set minecraft:lefttime visible true
 execute as @a run execute if score *lefttime lefttime matches ..0 run bossbar set minecraft:lefttime visible false
 execute store result bossbar minecraft:lefttime value run scoreboard players get *lefttime lefttime
-execute as @a run execute if score *c4time c4time matches ..0 if score *lefttime lefttime matches 1.. run scoreboard players remove *lefttime lefttime 1
-execute as @a run execute if score *c4time c4time matches 1.. run scoreboard players reset *lefttime lefttime
+execute if score *c4time c4time matches ..0 if score *lefttime lefttime matches 1.. run scoreboard players remove *lefttime lefttime 1
+execute if score *c4time c4time matches 1.. run scoreboard players reset *lefttime lefttime
 
 execute as @a[tag=carrying_c4] at @s if items entity @s weapon.mainhand stick run title @s actionbar "在基岩上下蹲以安置c4！"
 
