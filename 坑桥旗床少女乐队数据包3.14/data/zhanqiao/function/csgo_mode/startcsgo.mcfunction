@@ -39,7 +39,7 @@ scoreboard players set *蓝队 score 0
 bossbar add time "爆炸时间"
 bossbar set minecraft:time max 1200
 bossbar add lefttime "剩余安置时间"
-bossbar set minecraft:lefttime max 10240
+bossbar set minecraft:lefttime max 20480
 
 
 
