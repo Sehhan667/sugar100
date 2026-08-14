@@ -1,11 +1,10 @@
-execute if score #toggle maxc4timeset matches 1 run scoreboard players set #toggle maxc4timeset 2
-execute if score #toggle maxc4timeset matches 2 run scoreboard players set #toggle maxc4timeset 3
-execute if score #toggle maxc4timeset matches 3 run scoreboard players set #toggle maxc4timeset 4
-execute if score #toggle maxc4timeset matches 4 run scoreboard players set #toggle maxc4timeset 5
-execute if score #toggle maxc4timeset matches 5 run scoreboard players set #toggle maxc4timeset 6
-execute if score #toggle maxc4timeset matches 6 run scoreboard players set #toggle maxc4timeset 1
+#execute if score #toggle maxc4timeset matches 1 run scoreboard players set #toggle maxc4timeset 2
+##execute if score #toggle maxc4timeset matches 3 run scoreboard players set #toggle maxc4timeset 4
+#execute if score #toggle maxc4timeset matches 4 run scoreboard players set #toggle maxc4timeset 5
+#execute if score #toggle maxc4timeset matches 5 run scoreboard players set #toggle maxc4timeset 6
+execute if score #toggle maxc4timeset matches 6 run scoreboard players set #toggle maxc4timeset 0
 
-
+scoreboard players add #toggle maxc4timeset 1
 
 
 
