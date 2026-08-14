@@ -1,0 +1,2 @@
+execute if score *scoredisplay scoredisplay_winner matches 0 run data modify entity @e[tag=scoredisplay_winner,limit=1,type=text_display] text set value {"text":"红队","color":"red"}
+execute if score *scoredisplay scoredisplay_winner matches 1 run data modify entity @e[tag=scoredisplay_winner,limit=1,type=text_display] text set value {"text":"蓝队","color":"blue"}

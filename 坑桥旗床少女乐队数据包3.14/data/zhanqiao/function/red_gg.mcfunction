@@ -15,3 +15,7 @@ execute as @a at @s run attribute @s knockback_resistance base reset
 #execute if score *map map matches -1 run scoreboard players set *map map 0
 schedule clear zhanqiao:wait/wait
 forceload remove all
+
+
+#--------------统计信息---------------#
+scoreboard players set *scoredisplay scoredisplay_winner 0

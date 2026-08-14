@@ -2,6 +2,8 @@ function zhanqiao:resetgamescore
 function zhanqiao:reset
 function zhanqiao:gunmu_gg
 
+function zhanqiao:scoredisplay
+
 gamerule keep_inventory true
 gamerule fire_spread_radius_around_player 0
 gamerule mob_griefing false

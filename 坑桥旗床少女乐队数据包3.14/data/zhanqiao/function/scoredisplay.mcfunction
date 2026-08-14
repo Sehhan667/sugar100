@@ -1,0 +1,1 @@
+scoreboard objectives add scoredisplay_winner dummy

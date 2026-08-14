@@ -13,6 +13,8 @@ title @a subtitle "请稍后，为了等会服务器不会飞起来，这是必�
 
 schedule clear zhanqiao:reset
 schedule function zhanqiao:reset 6s replace
+schedule clear zhanqiao:wait/wait
+schedule function zhanqiao:wait/wait 6.3s replace
 fill 354 146 379 356 146 381 minecraft:air
 fill 387 134 405 389 134 407 minecraft:air
 fill 400 147 445 402 147 447 minecraft:andesite_slab

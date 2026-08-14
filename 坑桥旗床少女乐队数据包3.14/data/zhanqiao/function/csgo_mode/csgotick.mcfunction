@@ -87,4 +87,6 @@ effect give @e[tag=c4,type=zombie] fire_resistance infinite 255 true
 execute as @e[tag=!c4,type=zombie] run data remove entity @s CustomName
 tag @e[tag=!c4,type=zombie] add c4
 #为没有展示实体的C4僵尸生成旋转+发光的TNT展示实体（buttonapi: but=旋转 orangeglow=发光）
-execute as @e[type=zombie,tag=c4] unless data entity @s Passengers[0] run function zhanqiao:csgo_mode/c4_display
+execute as @e[type=zombie,tag=c4] unless entity @e[type=block_display,tag=c4_display,distance=..0.5] run function zhanqiao:csgo_mode/c4_display
+#让C4展示实体每tick传送到僵尸位置跟随（不骑乘，避免朝向受僵尸影响）
+execute as @e[type=zombie,tag=c4] at @s run tp @e[type=block_display,tag=c4_display,limit=1,sort=nearest] ~ ~0.5 ~
