@@ -12,6 +12,8 @@ bossbar set hotspotred players @a
 execute if score *map map matches 0 run function zhanqiao:hotspot_mode/point/standoff/beaconlight
 execute if score *map map matches 1 run function zhanqiao:hotspot_mode/point/nuketown/beaconlight
 execute if score *map map matches 5 run function zhanqiao:hotspot_mode/point/summit/beaconlight
+#热点展示实体按占领状态切换状态（玻璃+发光标签，独立文件管理）
+function zhanqiao:hotspot_mode/spotdisplay_state
 
 #切点
 scoreboard players add *hotspotswitchtime hotspotswitchtime 1

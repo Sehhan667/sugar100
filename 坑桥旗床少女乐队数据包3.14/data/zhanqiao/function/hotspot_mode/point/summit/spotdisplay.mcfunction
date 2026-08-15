@@ -1,0 +1,7 @@
+#清除旧的展示实体（先执行，避免残留）
+kill @e[tag=spot_display]
+#按当前热点编号生成对应展示实体（屏障 + aquaglow，scale按判定dx/dy/dz，X/Z偏移-0.5）
+execute if score *hotspotposition hotspotposition matches 0 run summon block_display 388 201 823 {Tags:["spot_display","whiteglow"],block_state:{Name:"minecraft:white_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.9f,-0.5f],scale:[19f,1f,27f]},teleport_duration:1}
+execute if score *hotspotposition hotspotposition matches 1 run summon block_display 393 201 875 {Tags:["spot_display","whiteglow"],block_state:{Name:"minecraft:white_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.9f,-0.5f],scale:[11f,1f,5f]},teleport_duration:1}
+execute if score *hotspotposition hotspotposition matches 2 run summon block_display 442 201 821 {Tags:["spot_display","whiteglow"],block_state:{Name:"minecraft:white_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.9f,-0.5f],scale:[19f,1f,12f]},teleport_duration:1}
+execute if score *hotspotposition hotspotposition matches 3 run summon block_display 348 204 813 {Tags:["spot_display","whiteglow"],block_state:{Name:"minecraft:white_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.9f,-0.5f],scale:[15f,1f,7f]},teleport_duration:1}
