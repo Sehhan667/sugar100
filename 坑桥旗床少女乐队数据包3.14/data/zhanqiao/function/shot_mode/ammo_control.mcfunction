@@ -8,8 +8,11 @@ execute as @s if items entity @s weapon.mainhand crossbow[custom_data={type:"mg4
 execute as @s if items entity @s weapon.mainhand crossbow[custom_data={type:"ots9"}] run tag @e[type=arrow,sort=nearest,limit=1,distance=..2] add ots9_bullet
 execute as @s if items entity @s weapon.mainhand crossbow[custom_data={type:"manowar"}] run tag @e[type=arrow,sort=nearest,limit=1,distance=..2] add manowar_bullet
 
-
+#子弹加速
 tag @e[type=arrow] add mot
+tag @e[type=lingering_potion] add mot
+
+
 
 execute as @s if items entity @s weapon.mainhand crossbow[custom_data={"type":"krm262"}] run function zhanqiao:shot_mode/krm262
 

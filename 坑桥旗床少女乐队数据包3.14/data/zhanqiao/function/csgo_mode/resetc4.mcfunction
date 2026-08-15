@@ -4,12 +4,27 @@ tag @a remove carrying_c4
 tag @a remove installing
 scoreboard players set @a c4install 0
 gamemode adventure @a
-#tag @a remove carrying_blue_flag
-#item replace entity @a inventory.0 with arrow 64
+
+
+
+
+#把既不在蓝队也不在红队的玩家设为旁观者，并tp到最近的有队伍的玩家
+gamemode spectator @a[team=!blue,team=!red]
+execute as @a[team=!blue,team=!red] at @s run execute if entity @p[team=blue,distance=..999] run tp @s @p[team=blue,distance=..999]
+execute as @a[team=!blue,team=!red] at @s run execute unless entity @p[team=blue,distance=..999] run tp @s @p[team=red,distance=..999]
+
+
+
+
+
 kill @e[type=arrow]
 kill @e[type=area_effect_cloud]
 kill @e[type=lingering_potion]
 kill @e[tag=c4site_display]
+
+
+
+
 #随机拆弹方
 tag @a remove lingzhu
 tag @a remove mowan
@@ -40,19 +55,13 @@ execute if score *map map matches 4 run summon zombie 443 169 640 {Tags:["c"],No
 execute if score *map map matches 6 run summon zombie 505 143 154 {Tags:["c"],NoAI:1b,Silent:1b,PersistenceRequired:true,CustomName:'C4'}
 execute if score *map map matches 3 run summon zombie 739 141 173 {Tags:["c"],NoAI:1b,Silent:1b,PersistenceRequired:true,CustomName:'C4'}
 
-#item replace entity @e[type=zombie] weapon.mainhand with minecraft:barrier 1
-#item replace entity @e[tag=blueflag] weapon.mainhand with minecraft:barrier 1
-#effect give @e[type=zombie] glowing infinite 255 true
-#effect give @e[type=zombie] resistance infinite 255 true
-#effect give @e[type=zombie] invisibility infinite 255 true
-#item replace entity @e[type=zombie] armor.head with minecraft:tnt
-#tp @a[team=blue] -299 115 -153 facing 34.5 110 11.5
 
 
 
 
 
-#execute if score *map map matches 0 run function zhanqiao:map/standoff
+
+
 gamemode adventure @a
 execute if score *map map matches 2 run setblock -191 112 -182 air
 execute if score *map map matches 2 run setblock -203 115 -98 air
@@ -75,6 +84,11 @@ execute if score *map map matches 4 run summon block_display 428.75 168.5 577.75
 execute if score *map map matches 4 run summon block_display 447.75 155.5 577.75 {Tags:["c4site_display","redglow"],block_state:{Name:"minecraft:red_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,1f,3f]},teleport_duration:1}
 execute if score *map map matches 6 run summon block_display 429.75 148.5 237.75 {Tags:["c4site_display","redglow"],block_state:{Name:"minecraft:red_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,1f,3f]},teleport_duration:1}
 execute if score *map map matches 6 run summon block_display 373.75 148.5 143.75 {Tags:["c4site_display","aquaglow"],block_state:{Name:"minecraft:light_blue_stained_glass"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,1f,3f]},teleport_duration:1}
+
+
+
+
+
 gamerule immediate_respawn false
 bossbar set minecraft:time visible false
 #scoreboard players set *lefttime lefttime 20480
