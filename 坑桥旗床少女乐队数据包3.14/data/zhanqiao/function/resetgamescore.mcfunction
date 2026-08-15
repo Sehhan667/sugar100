@@ -27,6 +27,7 @@ scoreboard players reset *c4team c4team
 kill @e[type=sheep]
 kill @e[type=zombie]
 kill @e[tag=c4_display]
+kill @e[tag=c4site_display]
 kill @e[tag=redflag_display]
 kill @e[tag=blueflag_display]
 kill @e[tag=spot_display]

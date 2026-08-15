@@ -98,6 +98,7 @@ scoreboard objectives add slidecd dummy
 scoreboard objectives add slidetime dummy
 scoreboard objectives add fadetime dummy
 scoreboard objectives add lefttime dummy
+scoreboard objectives add c4install dummy "C4安装进度"
 #hotspot
 scoreboard objectives add hotspotposition dummy
 scoreboard objectives add hotspotteamblue dummy

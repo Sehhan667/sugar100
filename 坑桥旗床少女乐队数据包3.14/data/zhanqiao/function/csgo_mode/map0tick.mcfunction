@@ -1,5 +1,16 @@
-execute positioned 405 136 355 as @a[tag=carrying_c4,dx=1,dy=1,dz=1] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run function zhanqiao:csgo_mode/map/standoff/place_c4_a
-execute positioned 377 136 398 as @a[tag=carrying_c4,dx=1,dy=1,dz=1] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run function zhanqiao:csgo_mode/map/standoff/place_c4_b
+#A点安装（半径1.5格内潜行持续累积，到80完成）
+execute positioned 405 136 355 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run tag @s add installing
+execute positioned 405 136 355 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run function zhanqiao:csgo_mode/c4_install
+execute positioned 405 136 355 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run execute if score @s c4install matches 80.. run function zhanqiao:csgo_mode/map/standoff/place_c4_a
+execute positioned 405 136 355 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run execute if score @s c4install matches 80.. run scoreboard players set @s c4install 0
+#B点安装
+execute positioned 377 136 398 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run tag @s add installing
+execute positioned 377 136 398 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run function zhanqiao:csgo_mode/c4_install
+execute positioned 377 136 398 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run execute if score @s c4install matches 80.. run function zhanqiao:csgo_mode/map/standoff/place_c4_b
+execute positioned 377 136 398 as @a[tag=carrying_c4,distance=..1.5] if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} run execute if score @s c4install matches 80.. run scoreboard players set @s c4install 0
+#中断清零：未处于安装状态（范围内+潜行）的持包玩家进度归零
+execute as @a[tag=carrying_c4,tag=!installing] run scoreboard players set @s c4install 0
+tag @a remove installing
 
 execute if block 405 136 355 obsidian run scoreboard players remove *c4time c4time 1
 execute if block 377 136 398 obsidian run scoreboard players remove *c4time c4time 1

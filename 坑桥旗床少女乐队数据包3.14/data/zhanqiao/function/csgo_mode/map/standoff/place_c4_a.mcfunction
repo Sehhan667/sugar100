@@ -1,4 +1,6 @@
 setblock 405 136 355 obsidian
+#安置c4后移除包点展示实体
+kill @e[tag=c4site_display]
 scoreboard players set *c4position c4position 0
 tag @a remove carrying_c4
 scoreboard objectives add c4time dummy
