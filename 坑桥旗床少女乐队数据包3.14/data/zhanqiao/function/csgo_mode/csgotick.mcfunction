@@ -20,6 +20,7 @@ execute if score *map map matches 2 run function zhanqiao:csgo_mode/map2tick
 execute if score *map map matches 3 run function zhanqiao:csgo_mode/map3tick
 execute if score *map map matches 4 run function zhanqiao:csgo_mode/map4tick
 execute if score *map map matches 6 run function zhanqiao:csgo_mode/map6tick
+execute if score *map map matches 5 run function zhanqiao:csgo_mode/map5tick
 
 
 

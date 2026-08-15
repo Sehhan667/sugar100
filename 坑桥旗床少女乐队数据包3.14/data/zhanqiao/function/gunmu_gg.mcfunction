@@ -1,5 +1,5 @@
 title @a title {"text":"坑桥旗床少女乐队","color":"aqua"}
-title @a subtitle {"text":"预发布版本pre-6   本来懒得更新的哈哈（"}
+title @a subtitle {"text":"预发布版本pre-8   本来懒得更新的哈哈（"}
 scoreboard players set *蓝队 score 0
 scoreboard players set *红队 score 0
 clear @a[team=blue]

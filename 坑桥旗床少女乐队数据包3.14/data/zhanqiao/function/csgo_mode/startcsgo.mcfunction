@@ -17,8 +17,9 @@ execute if score *map map matches -1 run tellraw @a "当前选择的地图不支
 
 execute if score *map map matches -1 run scoreboard players set *map map 2
 
-execute if score *map map matches 5 run tellraw @a "当前选择的地图不支持该模式，已自动更改！"
-execute if score *map map matches 5 run scoreboard players set *map map 2
+#summit(5)已支持爆破
+#execute if score *map map matches 5 run tellraw @a "当前选择的地图不支持该模式，已自动更改！"
+#execute if score *map map matches 5 run scoreboard players set *map map 2
 execute as @a at @s if score @s offweapon matches 2 run scoreboard players set @s offweapon 0
 
 
