@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:multi_action",
+
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause" :false,
+  "columns": 3,
+
+  "title": [{"text":"更改主武器","color":"#FFFFFF"}],
+  "external_title": [{"text":"测试版本","color":"#FFFFFF"}],
+
+  "actions": [{"label": "GKS","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 0"}},
+              {"label": "ZWP反装装狙击弓","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 1"}},
+              {"label": "BP50","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 2"}},
+              {"label": "KRM262","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 3"}},
+              {"label": "der服糖包包带带带","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 4"}},
+              {"label": "Ots-9","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 5"}},
+              {"label": "MG42","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 6"}},
+              {"label": "Man O'War","action": {"type": "minecraft:run_command","command": "scoreboard players set @s mainweapon 7"}},
+              {"label": "重生后生效","action": {"type": "minecraft:run_command","command": "function zhanqiao:menu/noop"}}
+  ]}

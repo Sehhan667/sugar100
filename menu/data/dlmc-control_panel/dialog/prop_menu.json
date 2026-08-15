@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:multi_action",
+
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause" :false,
+  "columns": 3,
+
+  "title": [{"text":"更改道具","color":"#FFFFFF"}],
+  "external_title": [{"text":"测试版本","color":"#FFFFFF"}],
+
+  "actions": [{"label": "烟雾damn","action": {"type": "minecraft:run_command","command": "scoreboard players set @s prop 0"}},
+              {"label": "FLA5H Bang","action": {"type": "minecraft:run_command","command": "scoreboard players set @s prop 1"}},
+              {"label": "小摔炮","action": {"type": "minecraft:run_command","command": "scoreboard players set @s prop 2"}},
+              {"label": "燃烧弹","action": {"type": "minecraft:run_command","command": "scoreboard players set @s prop 3"}},
+              {"label": "重生后生效","action": {"type": "minecraft:run_command","command": "function zhanqiao:menu/noop"}}
+  ]}

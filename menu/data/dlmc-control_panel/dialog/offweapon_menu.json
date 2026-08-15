@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:multi_action",
+
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause" :false,
+  "columns": 3,
+
+  "title": [{"text":"更改副武器","color":"#FFFFFF"}],
+  "external_title": [{"text":"测试版本","color":"#FFFFFF"}],
+
+  "actions": [{"label": "装装的菜刀","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 0"}},
+              {"label": "小手弩","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 1"}},
+              {"label": "铁矛","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 2"}},
+              {"label": "回响水晶","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 3"}},
+              {"label": "爆炸弩","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 4"}},
+              {"label": "拆弹器","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 5"}},
+              {"label": "消防斧","action": {"type": "minecraft:run_command","command": "scoreboard players set @s offweapon 6"}},
+              {"label": "重生后生效","action": {"type": "minecraft:run_command","command": "function zhanqiao:menu/noop"}}
+  ]}
