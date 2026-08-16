@@ -29,7 +29,7 @@ execute unless score *InMLGGame InMLGGame matches 1 run give @s arrow 4
 execute unless score *InGame InGame matches 1 unless score *InBedGame InBedGame matches 1 run execute unless score *InMLGGame InMLGGame matches 1 run give @s arrow 60
 
 execute if score *InShotGame InShotGame matches 1 as @a at @s run attribute @s armor base set 521
-execute if score *InShotGame InShotGame matches 1 as @a at @s run attribute @s armor_toughness base set 15
+execute if score *InShotGame InShotGame matches 1 as @a at @s run attribute @s armor_toughness base set 8
 execute if score *InShotGame InShotGame matches 1 as @a at @s run attribute @s knockback_resistance base set 999
 
 
