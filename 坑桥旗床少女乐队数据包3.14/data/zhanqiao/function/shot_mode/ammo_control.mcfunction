@@ -14,6 +14,6 @@ tag @e[type=lingering_potion] add mot
 
 
 
-execute as @s if items entity @s weapon.mainhand crossbow[custom_data={"type":"krm262"}] run function zhanqiao:shot_mode/krm262
+execute as @s if items entity @s weapon.mainhand crossbow[custom_data~{"type":"krm262"}] run function zhanqiao:shot_mode/krm262
 
 #execute as @a at @s run attribute @s knockback_resistance base set 999
