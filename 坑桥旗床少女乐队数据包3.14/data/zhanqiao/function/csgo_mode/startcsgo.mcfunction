@@ -44,7 +44,6 @@ execute store result bossbar minecraft:lefttime max run scoreboard players get *
 
 
 
-
 #gamemode adventure @a[team=blue]
 #gamemode adventure @a[team=red]
 #bossbar set time visible false

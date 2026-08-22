@@ -18,5 +18,6 @@
               {"label": "地图主题曲","action": {"type": "minecraft:run_command","command": "function music:main/play/haruhikage"}},
               {"label": "众神眷恋的幻想乡","action": {"type": "minecraft:run_command","command": "function music:main/play/gensokyo"}},
               {"label": "Into the Night","action": {"type": "minecraft:run_command","command": "function music:main/play/_into_the_night"}},
-              {"label": "YMCA","action": {"type": "minecraft:run_command","command": "function music:main/play/ymca"}}
+              {"label": "YMCA","action": {"type": "minecraft:run_command","command": "function music:main/play/ymca"}},
+              {"label": "花与剑的轮舞","action": {"type": "minecraft:run_command","command": "function music:main/play/flower_and_sword"}}
   ]}
